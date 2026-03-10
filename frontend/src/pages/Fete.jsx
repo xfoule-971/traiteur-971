@@ -1,8 +1,8 @@
-const Party = () => {
+const Fete = () => {
     return (
         <main>
 
         </main>
     );
 };
-export default Party;
+export default Fete;
