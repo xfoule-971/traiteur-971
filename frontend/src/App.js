@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
+import Navigation from "./components/Navigation";
+
 import Accueil from "./pages/Accueil";
 import Evenement from "./pages/Evenement";
 import Menus from "./pages/Menus";
@@ -23,6 +25,7 @@ import Cookie from "./pages/Cookie";
 const App = () => {
     return (
         <div>
+            <Navigation />
 
             <Routes>
                 <Route path="/" element={<Accueil />}/>

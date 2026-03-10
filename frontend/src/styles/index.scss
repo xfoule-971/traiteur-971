@@ -22,3 +22,31 @@ h3, h4,
 strong {
   font-family: "Playfair Display", serif;
 }
+
+/*colorimétrie de la navigation et du footer*/
+.bande-color {
+    background-color: #000000;
+}
+
+
+/*survol*/
+.survol-btn:hover {
+    cursor: pointer;
+    background-color: antiquewhite !important;
+    color: #000000 !important;
+    font-weight: bolder;
+}
+.survol-link:hover {
+    text-decoration: underline !important; /* souligné au survol */
+}
+.survol-social a:hover {
+    transform:scale(1.2);
+}
+.survol-menu:hover {
+    background-color: transparent !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 3px !important;
+}
+.galerie-img:hover{
+    transform:scale(1.55);
+}
