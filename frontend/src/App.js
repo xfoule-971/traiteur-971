@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 
 import Accueil from "./pages/Accueil";
 import Evenement from "./pages/Evenement";
@@ -49,6 +50,7 @@ const App = () => {
                 <Route path="/cookie" element={<Cookie />}/>
             </Routes>
 
+            <Footer />
         </div>
     );
 };

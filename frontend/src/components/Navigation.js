@@ -58,7 +58,7 @@ const Navigation = () => {
                     <li className="nav-item dropdown">
 
                         <NavLink to="/evenement"
-                        className="nav-link dropdown-toggle text-warning mx-lg-3"
+                        className="nav-link dropdown-toggle text-warning mx-lg-3 survol-menu"
                         id="navbarDropdown"
                         role="button"
                         data-bs-toggle="dropdown"

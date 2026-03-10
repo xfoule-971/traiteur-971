@@ -24,7 +24,8 @@ strong {
 }
 
 /*colorimétrie de la navigation et du footer*/
-.bande-color {
+.bande-color,
+footer {
     background-color: #000000;
 }
 
@@ -37,16 +38,20 @@ strong {
     font-weight: bolder;
 }
 .survol-link:hover {
+    cursor: pointer;
     text-decoration: underline !important; /* souligné au survol */
 }
 .survol-social a:hover {
+    cursor: pointer;
     transform:scale(1.2);
 }
 .survol-menu:hover {
+    cursor: pointer;
     background-color: transparent !important;
     text-decoration: underline !important;
     text-decoration-thickness: 3px !important;
 }
 .galerie-img:hover{
+    cursor: pointer;
     transform:scale(1.55);
 }
