@@ -72,10 +72,11 @@ const Navigation = () => {
                                 <NavLink to="/mariage" 
                                 className="dropdown-item text-warning survol-menu"
                                 style={({ isActive }) => ({
-                                fontWeight: isActive ? "bold" : "normal",
-                                textDecoration: isActive ? "underline" : "none",
-                                textDecorationThickness: isActive ? "3px" : "auto", // épaisseur du underline
-                                fontSize: isActive ? "1.1rem" : "1rem",
+                                    backgroundColor: "transparent",
+                                    fontWeight: isActive ? "bold" : "normal",
+                                    textDecoration: isActive ? "underline" : "none",
+                                    textDecorationThickness: isActive ? "3px" : "auto", // épaisseur du underline
+                                    fontSize: isActive ? "1.1rem" : "1rem",
                                 })}
                                 >
                                     Mariages
@@ -86,13 +87,14 @@ const Navigation = () => {
                                 <NavLink to="/entreprise" 
                                 className="dropdown-item text-warning survol-menu"
                                 style={({ isActive }) => ({
-                                fontWeight: isActive ? "bold" : "normal",
-                                textDecoration: isActive ? "underline" : "none",
-                                textDecorationThickness: isActive ? "3px" : "auto", // épaisseur du underline
-                                fontSize: isActive ? "1.1rem" : "1rem",
+                                    backgroundColor: "transparent",
+                                    fontWeight: isActive ? "bold" : "normal",
+                                    textDecoration: isActive ? "underline" : "none",
+                                    textDecorationThickness: isActive ? "3px" : "auto", // épaisseur du underline
+                                    fontSize: isActive ? "1.1rem" : "1rem",
                                 })}
                                 >
-                                    Repas d'affaires
+                                    Evènements d'entreprise
                                 </NavLink>
                             </li>
 
@@ -100,13 +102,14 @@ const Navigation = () => {
                                 <NavLink to="/fetes" 
                                 className="dropdown-item text-warning survol-menu"
                                 style={({ isActive }) => ({
-                                fontWeight: isActive ? "bold" : "normal",
-                                textDecoration: isActive ? "underline" : "none",
-                                textDecorationThickness: isActive ? "3px" : "auto", // épaisseur du underline
-                                fontSize: isActive ? "1.1rem" : "1rem",
+                                    backgroundColor: "transparent",
+                                    fontWeight: isActive ? "bold" : "normal",
+                                    textDecoration: isActive ? "underline" : "none",
+                                    textDecorationThickness: isActive ? "3px" : "auto", // épaisseur du underline
+                                    fontSize: isActive ? "1.1rem" : "1rem",
                                 })}
                                 >
-                                    Soirées privées
+                                    Evènements privés
                                 </NavLink>
                             </li>
 
@@ -120,10 +123,10 @@ const Navigation = () => {
                         to={link.to}
                         className="nav-link text-warning mx-lg-3 survol-menu"
                         style={({ isActive }) => ({
-                        fontWeight: isActive ? "bold" : "normal",
-                        textDecoration: isActive ? "underline" : "none",
-                        textDecorationThickness: isActive ? "3px" : "auto", // épaisseur du underline
-                        fontSize: isActive ? "1.1rem" : "1rem",
+                            fontWeight: isActive ? "bold" : "normal",
+                            textDecoration: isActive ? "underline" : "none",
+                            textDecorationThickness: isActive ? "3px" : "auto", // épaisseur du underline
+                            fontSize: isActive ? "1.1rem" : "1rem",
                         })}
                         >
                             {link.label}
