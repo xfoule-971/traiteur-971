@@ -11,15 +11,15 @@ const Confidentialite = () => {
                 <meta name="robots" content="noindex, nofollow" />
             </Helmet>
 
+            <header className="hero-image" style={{ zIndex: '1'}}>
+                <div className="d-flex flex-column align-items-center text-center" style={{ zIndex: '999'}}>
+                    <h1 className="text-warning fw-bold text-center" style={{ fontSize : '3.5em'}}>
+                        Politique de confidentialité
+                    </h1>
+                </div>
+            </header>
+            
             <main>
-                <header className="hero-image" style={{ zIndex: '1'}}>
-                    <div className="d-flex flex-column align-items-center text-center" style={{ zIndex: '999'}}>
-                        <h1 className="text-warning fw-bold text-center" style={{ fontSize : '3.5em'}}>
-                            Politique de confidentialité
-                        </h1>
-                    </div>
-                </header>
-
                 <section className="container mt-5 mb-5 bg-light p-5 rounded">
                     <div className="row g-3 text-center">
                         <div className="row g-2 d-flex flex-column align-items-center text-start">
