@@ -78,18 +78,18 @@ const Accueil = () => {
 
     return (
         <>
-        <Helmet>
-            <title>traiteur-karukéra</title>
-            {/*La description aux moteurs de recherche*/}
-            <meta name="description" 
-            content="Le goût authentique de la guadeloupe pour vos fêtes. Produits frais, saveurs créoles et service pro.
-            Réservez votre buffet ou vos plateaux repas." 
-            />
-        </Helmet>
+            <Helmet>
+                <title>traiteur-karukéra</title>
+                {/*La description aux moteurs de recherche*/}
+                <meta name="description" 
+                content="Le goût authentique de la guadeloupe pour vos fêtes. Produits frais, saveurs créoles et service pro.
+                Réservez votre buffet ou vos plateaux repas." 
+                />
+            </Helmet>
 
+            <HeroCard />
+            
             <main>
-                <HeroCard />
-
                 <section className="bg-light p-5">
                     {avantcard.map((item, idx) => (
                         <div key={idx}>
