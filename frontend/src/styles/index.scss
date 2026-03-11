@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mea+Culpa&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/* Appliquer globalement */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Police et marge supérieur */
+body {
+    padding-top:80px;
+    background-color: #dfd2b9 !important;
+}
+
+/* police des titres des mots importants */
+h1, h2,
+h3, h4,
+strong {
+  font-family: "Playfair Display", serif;
+}
+
+/*colorimétrie de la navigation et du footer*/
+.bande-color,
+footer {
+    background-color: #000000 !important;
+}
+/*accueil*/
+.hero {
+    position:relative;
+    height:90vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    .hero__video {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        z-index:1;
+    }
+}
+
+/*plat mis en avant page accueil*/
+.shadow-warning {
+    box-shadow: 10px 10px 2px 1px rgba(255, 193, 7, 1);
+}
+
+/* image de fond des headers (sauf de la page d'accueil) */
+.hero-image {
+    background-image: url("../assets/images/table.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.35)
+    );
+    z-index: 1;
+}
+
+/* mise en forme des paragraphes */
+.justif-text {
+    text-align: justify;
+}
+
+/* uniformisation de la taille des photos du carroussel */
+.carousel img,
+.team {
+    height:260px;
+    object-fit:cover;
+}
+
+/*survol*/
+.survol-btn:hover {
+    cursor: pointer;
+    background-color: antiquewhite !important;
+    color: #000000 !important;
+    font-weight: bolder;
+}
+.survol-link:hover {
+    cursor: pointer;
+    text-decoration: underline !important; /* souligné au survol */
+}
+.survol-social a:hover {
+    cursor: pointer;
+    transform:scale(1.2);
+}
+.survol-menu:hover {
+    cursor: pointer;
+    background-color: transparent !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 3px !important;
+}
+.galerie-img:hover{
+    cursor: pointer;
+    transform:scale(1.55);
+}
