@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className="text-warning p-4">
         <div className="container">
 
-            <div className="row gy-4">
+            <div className="row g-4">
 
                 {/* BLOC 1 LOGO */}
 
@@ -38,7 +38,7 @@ const Footer = () => {
 
                 <div className="col-12 col-md-6 col-lg-3">
 
-                    <h4 className="mb-5">Plan du site</h4>
+                    <h4 className="mb-4">Plan du site</h4>
 
                     {[
                         { to: "/", label: "Accueil" },
@@ -64,7 +64,7 @@ const Footer = () => {
 
                 <div className="col-12 col-md-6 col-lg-3">
 
-                    <h4 className="mb-5">Contact</h4>
+                    <h4 className="mb-4">Contact</h4>
 
                     <div className="d-flex flex-column align-items-start gap-3 mb-5">
 
@@ -108,7 +108,7 @@ const Footer = () => {
 
                 <div className="col-12 col-md-6 col-lg-3">
 
-                    <h4 className="mb-4">Suivez-nous</h4>
+                    <h4 className="mb-3">Suivez-nous</h4>
 
                     <div className="d-flex gap-3 survol-social">
 
