@@ -1,6 +1,6 @@
 const EventCard = ({title, para1, para2, image, subtitle}) => {
     return (
-        <section className="container-fluid mt-5">
+        <section className="container-fluid">
 
             <div className="row justify-content-center text-center">
 
@@ -9,9 +9,9 @@ const EventCard = ({title, para1, para2, image, subtitle}) => {
                     <div className="row justify-content-center align-items-start">
 
                         {/* PARTIE TEXTE */}
-                        <div className="col-md-4 text-start p-3">
+                        <div className="col-md-5 text-start p-3">
 
-                            <h2 className="text-warning fw-bold mb-4">{title}</h2>
+                            <h2 className="text-warning text-center fw-bold mb-4">{title}</h2>
 
                             <p className="justif-text">
                                {para1}

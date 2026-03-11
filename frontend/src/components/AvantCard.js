@@ -19,7 +19,7 @@ const AvantCard = ({ image, alt, title, description }) => {
 
                             {/* SLOGAN + BOUTON */}
                             <div className="col-md-6 d-flex flex-column align-items-center p-3">
-                                <h2 className="text-warning mb-4">{title}</h2>
+                                <h2 className="text-warning fw-bold mb-4">{title}</h2>
                                 <p className="w-75 justif-text">
                                     {description}
                                 </p>

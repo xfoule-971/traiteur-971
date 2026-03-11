@@ -101,7 +101,7 @@ const Accueil = () => {
             <section className="bg-light p-5">
                 <div className="container">
                     <div className="row g-3 text-center">
-                        <h2 className="text-warning mb-4">Avis de nos clients</h2>
+                        <h2 className="text-warning fw-bold mb-4">Avis de nos clients</h2>
                     </div>
                     
                     <div className="row justify-content-center g-3 row-cols-1 row-cols-md-2 row-cols-lg-4">

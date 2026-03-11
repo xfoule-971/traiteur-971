@@ -5,7 +5,7 @@ const PrestationCard = ({ title, cards }) => {
   return (
     <div className="container text-center">
 
-      <h2 className="text-warning mb-5">{title}</h2>
+      <h2 className="text-warning fw-bold mb-5">{title}</h2>
 
       <div className="row g-4 justify-content-center">
 
