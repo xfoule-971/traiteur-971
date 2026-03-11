@@ -12,7 +12,7 @@ const Contact = () => {
                         Contact
                     </h1>
 
-                    <h2 className="text-light w-75" style={{ fontSize : '1.5em'}}>
+                    <h2 className="text-light" style={{ fontSize : '1.5em'}}>
                        Nous répondrons à toutes vos questions
                     </h2>
                 </div>
@@ -27,15 +27,18 @@ const Contact = () => {
             </section>
 
             <section className="p-5 bg-light">
-                <div className="text-center">
-                        <h3 className="mb-3">Vous avez un projet d'évenement?</h3>
-                        <Link
+                <div className="text-center mx-auto" style={{maxWidth:"450px"}}>
+
+                    <h3 className="mb-3">Vous avez un projet d'évenement?</h3>
+
+                    <Link
                         to="/commander"
-                        className="btn btn-warning fw-semibold text-light px-5 py-2 survol-btn"
-                        >
-                            Demander un devis
-                        </Link>
-                    </div>
+                        className="btn btn-warning w-100 fw-semibold text-light py-2 survol-btn"
+                    >
+                        Demander un devis
+                    </Link>
+
+                </div>
             </section>
         </main>
     );

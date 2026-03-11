@@ -88,25 +88,30 @@ const Menus = () => {
 
                 <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-5">
 
-                    <div className="text-center">
-                        <h3 className="mb-3">Vous avez des questions sur nos formules?</h3>
+                    <div className="text-center mx-auto" style={{maxWidth:"450px"}}>
+                        <h3 className="mb-3">Des questions sur nos formules?</h3>
                         <Link
                         to="/contact"
-                        className="btn btn-warning fw-semibold text-light px-5 py-2 survol-btn"
+                        className=
+                        "btn btn-warning w-100 fw-semibold text-light px-5 py-2 survol-btn"
                         >
                             Poser vos questions
                         </Link>
                     </div>
 
-                    <div className="text-center">
-                        <h3 className="mb-3">Vous avez un projet d'évenement?</h3>
-                        <Link
-                        to="/commander"
-                        className="btn btn-warning fw-semibold text-light px-5 py-2 survol-btn"
-                        >
-                            Demander un devis
-                        </Link>
-                    </div>
+                    <div className="text-center mx-auto" style={{maxWidth:"450px"}}>
+
+                    <h3 className="mb-3">Vous avez un projet d'évenement?</h3>
+
+                    <Link
+                    to="/commander"
+                    className=
+                    "btn btn-warning w-100 fw-semibold text-light py-2 survol-btn"
+                    >
+                        Demander un devis
+                    </Link>
+
+                </div>
 
                 </div>
 
