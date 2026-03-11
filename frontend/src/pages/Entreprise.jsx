@@ -73,7 +73,7 @@ const Entreprise = () => {
                         Nous vous accompagnons pour tous vos évènements.
                     </p>
 
-                    <a href="#bloc-evenements" className="btn btn-warning text-light px-4 py-2 mt-3 survol-btn">
+                    <a href="#bloc-entreprise" className="btn btn-warning fw-semibold text-light px-4 py-2 mt-3 survol-btn">
                         Nos formules évènements d'entreprise
                     </a>
                 </div>

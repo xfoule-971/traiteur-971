@@ -76,9 +76,15 @@ footer {
     );
     z-index: 1;
 }
+
 /* mise en forme des paragraphes */
 .justif-text {
     text-align: justify;
+}
+/* uniformisation de la taille des photos du carroussel */
+.carousel img{
+height:260px;
+object-fit:cover;
 }
 
 /*survol*/

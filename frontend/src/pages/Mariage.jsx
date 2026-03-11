@@ -74,7 +74,7 @@ const Mariage = () => {
                         Vous cherchez un traiteur pour votre mariage ?  Nous vous accompagnons pour des évènements inoubliables.
                     </p>
 
-                    <a href="#bloc-evenements" className="btn btn-warning text-light px-4 py-2 mt-3 survol-btn">
+                    <a href="#bloc-evenements" className="btn btn-warning fw-semibold text-light px-4 py-2 mt-3 survol-btn">
                         Nos formules mariages
                     </a>
                 </div>
