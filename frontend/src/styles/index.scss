@@ -53,17 +53,17 @@ footer {
 .shadow-warning {
     box-shadow: 10px 10px 2px 1px rgba(255, 193, 7, 1);
 }
-/* Bloc image */
+
+/* image de fond des headers (sauf de la page d'accueil) */
 .hero-image {
-  /* hauteur visuelle proche de ta capture */
-  background-image: url("../assets/images/table.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-image: url("../assets/images/table.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hero-image::before {
     content: "";
@@ -75,6 +75,10 @@ footer {
         rgba(0, 0, 0, 0.35)
     );
     z-index: 1;
+}
+/* mise en forme des paragraphes */
+.justif-text {
+    text-align: justify;
 }
 
 /*survol*/

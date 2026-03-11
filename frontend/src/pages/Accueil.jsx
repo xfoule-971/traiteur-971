@@ -91,7 +91,7 @@ const Accueil = () => {
                 ))}
             </section>
 
-            <section className="bg-secondary-subtle p-5">
+            <section className="p-5">
                 <PrestationCard
                 title="Découvrez nos différentes prestations"
                 cards={prestations}
