@@ -38,7 +38,7 @@ const Footer = () => {
 
                 <div className="col-12 col-md-6 col-lg-3">
 
-                    <h5 className="mb-5">Plan du site</h5>
+                    <h4 className="mb-5">Plan du site</h4>
 
                     {[
                         { to: "/", label: "Accueil" },
@@ -64,7 +64,7 @@ const Footer = () => {
 
                 <div className="col-12 col-md-6 col-lg-3">
 
-                    <h5 className="mb-5">Contact</h5>
+                    <h4 className="mb-5">Contact</h4>
 
                     <div className="d-flex flex-column align-items-start gap-3 mb-5">
 
@@ -108,7 +108,7 @@ const Footer = () => {
 
                 <div className="col-12 col-md-6 col-lg-3">
 
-                    <h5 className="mb-4">Suivez-nous</h5>
+                    <h4 className="mb-4">Suivez-nous</h4>
 
                     <div className="d-flex gap-3 survol-social">
 
