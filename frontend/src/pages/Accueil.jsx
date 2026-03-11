@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import AvantCard from "../components/AvantCard";
 import HeroCard from "../components/HeroCard";
 import PrestationCard from "../components/PrestationCard";
@@ -75,47 +77,58 @@ const Accueil = () => {
     ];
 
     return (
-        <main>
-            <HeroCard />
-
-            <section className="bg-light p-5">
-                {avantcard.map((item, idx) => (
-                    <div key={idx}>
-                        <AvantCard
-                        image={item.image}
-                        alt={item.alt}
-                        title={item.title}
-                        description={item.description}
-                        />
-                    </div>
-                ))}
-            </section>
-
-            <section className="p-5">
-                <PrestationCard
-                title="Découvrez nos différentes prestations"
-                cards={prestations}
+        <>
+            <Helmet>
+                <title>traiteur-karukéra</title>
+                {/*La description aux moteurs de recherche*/}
+                <meta name="description" 
+                content="Le goût authentique de la guadeloupe pour vos fêtes. Produits frais, saveurs créoles et service pro.
+                Réservez votre buffet ou vos plateaux repas." 
                 />
-            </section>
+            </Helmet>
 
-            <section className="bg-light p-5">
-                <div className="container">
-                    <div className="row g-3 text-center">
-                        <h2 className="text-warning fw-bold mb-4">Avis de nos clients</h2>
+            <HeroCard />
+            
+            <main>
+                <section className="bg-light p-5">
+                    {avantcard.map((item, idx) => (
+                        <div key={idx}>
+                            <AvantCard
+                            image={item.image}
+                            alt={item.alt}
+                            title={item.title}
+                            description={item.description}
+                            />
+                        </div>
+                    ))}
+                </section>
+
+                <section className="p-5">
+                    <PrestationCard
+                    title="Découvrez nos différentes prestations"
+                    cards={prestations}
+                    />
+                </section>
+
+                <section className="bg-light p-5">
+                    <div className="container">
+                        <div className="row g-3 text-center">
+                            <h2 className="text-warning fw-bold mb-4">Avis de nos clients</h2>
+                        </div>
+                        
+                        <div className="row justify-content-center g-3 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                            {reviewsData.map((rev) => (
+                                <div key={rev.id} className="col">
+                                    <div className="h-100">
+                                        <ReviewCard review={rev} />
+                                    </div>  
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                    
-                    <div className="row justify-content-center g-3 row-cols-1 row-cols-md-2 row-cols-lg-4">
-                        {reviewsData.map((rev) => (
-                            <div key={rev.id} className="col">
-                                <div className="h-100">
-                                    <ReviewCard review={rev} />
-                                </div>  
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-        </main>
+                </section>
+            </main>
+        </>
     );
 };
 export default Accueil;

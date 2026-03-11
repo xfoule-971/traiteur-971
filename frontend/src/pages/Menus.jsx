@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import { Link } from "react-router-dom";
 
 import EventCard from "../components/EventCard";
@@ -44,7 +46,16 @@ const Menus = () => {
     ]; 
 
     return (
-        <main>
+        <>
+            <Helmet>
+                <title>traiteur-karukéra</title>
+                {/*La description aux moteurs de recherche*/}
+                <meta name="description" 
+                content="Parcourez notre carte traiteur : buffets froids, dîners assis et cocktails
+                dinatoires. Le meilleur du terroir de Guadeloupe dans votre assiette." 
+                />
+            </Helmet>
+
             <header className="hero-image" style={{ zIndex: '1'}}>
                 <div className="d-flex flex-column align-items-center text-center" style={{ zIndex: '999'}}>
                     <h1 className="text-warning fw-bold text-center" style={{ fontSize : '3.5em'}}>
@@ -61,62 +72,64 @@ const Menus = () => {
                 </div>
             </header>
 
-            <section className="p-5">
-                <div>
-                    {eventcard.map((item, idx) => (
-                    <div key={idx}>
-                        <EventCard
-                        title={item.title}
-                        para1={item.para1}
-                        para2={item.para2}
-                        image={item.image}
-                        subtitle={item.subtitle}
-                        />
+            <main>
+                <section className="p-5">
+                    <div>
+                        {eventcard.map((item, idx) => (
+                        <div key={idx}>
+                            <EventCard
+                            title={item.title}
+                            para1={item.para1}
+                            para2={item.para2}
+                            image={item.image}
+                            subtitle={item.subtitle}
+                            />
+                        </div>
+                        ))}
                     </div>
-                    ))}
-                </div>
-            </section>
+                </section>
 
-            <section className="bg-light p-5">
-                <PrestationCard
-                title="Découvrez nos différentes formules de menus"
-                cards={formules}
-                />
-            </section>
+                <section className="bg-light p-5">
+                    <PrestationCard
+                    title="Découvrez nos différentes formules de menus"
+                    cards={formules}
+                    />
+                </section>
 
-            <section className="container p-5">
+                <section className="container p-5">
 
-                <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-5">
+                    <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-5">
 
-                    <div className="text-center mx-auto" style={{maxWidth:"450px"}}>
-                        <h3 className="mb-3">Des questions sur nos formules?</h3>
+                        <div className="text-center mx-auto" style={{maxWidth:"450px"}}>
+                            <h3 className="mb-3">Des questions sur nos formules?</h3>
+                            <Link
+                            to="/contact"
+                            className=
+                            "btn btn-warning w-100 fw-semibold text-light px-5 py-2 survol-btn"
+                            >
+                                Poser vos questions
+                            </Link>
+                        </div>
+
+                        <div className="text-center mx-auto" style={{maxWidth:"450px"}}>
+
+                        <h3 className="mb-3">Vous avez un projet d'évenement?</h3>
+
                         <Link
-                        to="/contact"
+                        to="/commander"
                         className=
-                        "btn btn-warning w-100 fw-semibold text-light px-5 py-2 survol-btn"
+                        "btn btn-warning w-100 fw-semibold text-light py-2 survol-btn"
                         >
-                            Poser vos questions
+                            Demander un devis
                         </Link>
+
                     </div>
 
-                    <div className="text-center mx-auto" style={{maxWidth:"450px"}}>
+                    </div>
 
-                    <h3 className="mb-3">Vous avez un projet d'évenement?</h3>
-
-                    <Link
-                    to="/commander"
-                    className=
-                    "btn btn-warning w-100 fw-semibold text-light py-2 survol-btn"
-                    >
-                        Demander un devis
-                    </Link>
-
-                </div>
-
-                </div>
-
-            </section>
-        </main>
+                </section>
+            </main>
+        </>
     );
 };
 export default Menus;

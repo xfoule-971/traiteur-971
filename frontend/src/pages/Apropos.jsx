@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import EquipeCard from "../components/EquipeCard";
 import Equipe1 from "../assets/images/equipe1.jpg";
 import Equipe2 from "../assets/images/equipe2.jpg";
@@ -22,7 +24,16 @@ const Apropos = () => {
         }
     ]
     return (
-        <main>
+        <>
+            <Helmet>
+                <title>traiteur-karukéra</title>
+                {/*La description aux moteurs de recherche*/}
+                <meta name="description" 
+                content="Une équipe de professionnels dévoués pour votre traiteur en Guadeloupe.
+                Engagement, produits frais et sourires pour toutes vos réceptions." 
+                />
+            </Helmet>
+
             <header className="hero-image" style={{ zIndex: '1'}}>
                 <div className="d-flex flex-column align-items-center text-center" style={{ zIndex: '999'}}>
                     <h1 className="text-warning fw-bold text-center" style={{ fontSize : '3.5em'}}>
@@ -35,23 +46,25 @@ const Apropos = () => {
                 </div>
             </header>
 
-            <section className="p-5">
-                <div>
-                    {equipecard.map((item, idx) => (
-                    <div key={idx}>
-                        <EquipeCard
-                        image1={item.image1}
-                        image2={item.image2}
-                        image3={item.image3}
-                        image4={item.image4}
-                        description1={item.description1}
-                        description2={item.description2}
-                        />
+            <main>
+                <section className="p-5">
+                    <div>
+                        {equipecard.map((item, idx) => (
+                        <div key={idx}>
+                            <EquipeCard
+                            image1={item.image1}
+                            image2={item.image2}
+                            image3={item.image3}
+                            image4={item.image4}
+                            description1={item.description1}
+                            description2={item.description2}
+                            />
+                        </div>
+                        ))}
                     </div>
-                    ))}
-                </div>
-            </section>
-        </main>
+                </section>
+            </main>
+        </>
     );
 };
 export default Apropos;
