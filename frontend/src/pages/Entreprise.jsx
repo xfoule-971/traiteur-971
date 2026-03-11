@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import EventCard from "../components/EventCard";
 import Business from "../assets/images/business.jpg";
 
@@ -61,7 +63,16 @@ const Entreprise = () => {
     const photos = [ Img1, Img2, Img3, Img4, Img5, Img6 ];
 
     return (
-        <main>
+        <>
+            <Helmet>
+                <title>traiteur-karukéra</title>
+                {/*La description aux moteurs de recherche*/}
+                <meta name="description" 
+                content="Sublimez vos soirées d'entreprise en Guadeloupe. 
+                Cocktails dinatoires et buffets créoles raffinés pour marquer l'esprit de vos clients et employés." 
+                />
+            </Helmet>
+
             <header className="hero-image" style={{ zIndex: '1'}}>
                 <div className="d-flex flex-column align-items-center text-center" style={{ zIndex: '999'}}>
                     <h1 className="text-warning fw-bold text-center" style={{ fontSize : '3.5em'}}>
@@ -79,51 +90,53 @@ const Entreprise = () => {
                 </div>
             </header>
 
-            <section className="p-5">
-                <div>
-                    {eventcard.map((item, idx) => (
-                    <div key={idx}>
-                        <EventCard
-                        title={item.title}
-                        para1={item.para1}
-                        para2={item.para2}
-                        image={item.image}
-                        subtitle={item.subtitle}
-                        />
+            <main>
+                <section className="p-5">
+                    <div>
+                        {eventcard.map((item, idx) => (
+                        <div key={idx}>
+                            <EventCard
+                            title={item.title}
+                            para1={item.para1}
+                            para2={item.para2}
+                            image={item.image}
+                            subtitle={item.subtitle}
+                            />
+                        </div>
+                        ))}
                     </div>
-                    ))}
-                </div>
-            </section>
+                </section>
 
-            <section id="bloc-entreprise" style={{ backgroundColor : '#ac9362'}}>
-                <div>
-                    {blocevents.map((item, idx) => (
-                    <div key={idx}>
-                        <BlocEvenements
-                        title1={item.title1}
-                        title2={item.title2}
-                        title3={item.title3}
-                        image1={item.image1}
-                        image2={item.image2}
-                        image3={item.image3}
-                        phototitle1={item.phototitle1}
-                        phototitle2={item.phototitle2}
-                        phototitle3={item.phototitle3}
-                        description1={item.description1}
-                        description2={item.description2}
-                        description3={item.description3}
-                        />
+                <section id="bloc-entreprise" style={{ backgroundColor : '#ac9362'}}>
+                    <div>
+                        {blocevents.map((item, idx) => (
+                        <div key={idx}>
+                            <BlocEvenements
+                            title1={item.title1}
+                            title2={item.title2}
+                            title3={item.title3}
+                            image1={item.image1}
+                            image2={item.image2}
+                            image3={item.image3}
+                            phototitle1={item.phototitle1}
+                            phototitle2={item.phototitle2}
+                            phototitle3={item.phototitle3}
+                            description1={item.description1}
+                            description2={item.description2}
+                            description3={item.description3}
+                            />
+                        </div>
+                        ))}
                     </div>
-                    ))}
-                </div>
-            </section>
+                </section>
 
-            <section className="d-flex flex-column align-items-center text-center p-5">
-                <h2 className="text-warning fw-bold mb-4" style={{fontStyle : '1.5em'}}>Voici quelques photos de ces instants</h2>
+                <section className="d-flex flex-column align-items-center text-center p-5">
+                    <h2 className="text-warning fw-bold mb-4" style={{fontStyle : '1.5em'}}>Voici quelques photos de ces instants</h2>
 
-                <CarouselbrideCard images={photos} />
-            </section>
-        </main>
+                    <CarouselbrideCard images={photos} />
+                </section>
+            </main>
+        </>
     );
 };
 export default Entreprise;
